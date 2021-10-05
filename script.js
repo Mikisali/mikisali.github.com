@@ -1,9 +1,8 @@
-$("#btn").click(function(){
-    Location.reload();
-
-});
 $(document).ready(function(){
     $( "img" ).click(function() {
-        $(this).slideUp();
+        for (var i = 0; i < 5; i++){
+            $(this).slideUp();
+            $(this).slideDown();
+        }
     });
 }); 
